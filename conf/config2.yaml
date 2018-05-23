@@ -1,0 +1,18 @@
+trainfile: ../v2.0/data/train_RCNN.csv
+testfile: ../v2.0/data/test_RCNN.csv
+outputfile:
+    w2vcorpus: ../v2.0/data/w2vcorpus.txt
+    w2vmodel: ../v2.0/model/w2vmodel.bin
+    stopwords: ../data/stopwords.txt
+    lowfreqwords: ../v2.0/data/lowfreqwords.txt
+    file_train_replaced: ../v2.0/data/train_replaced.csv
+    file_test_replaced: ../v2.0/data/test_replaced.csv
+    file_RCNNmodel: ../v2.0/model/RCNNmodel.h5
+    file_weight: ../v2.0/model/modelweights
+    prefile: ./v2.0/data/prefile/outputfile.csv
+    hisfile: ../v2.0/data/history.pkl
+    bestrefile: ../v2.0/data/bestre.pkl
+    file_valid_result: ../v2.0/data/valid_outputfile.csv
+epoch: best_epoch
+thres: best_thres
+

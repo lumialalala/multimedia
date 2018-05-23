@@ -1,0 +1,12 @@
+inputfile: ./data/social_data3.csv
+outputfile:
+    ft_train: ./data/train_set.txt
+    ft_test: ./data/test_set.csv
+    prefile: ./v1.0/outputfile.csv
+wordNgrams: 2
+model: ./v1.0/model.bin
+thres: 0.64
+epoch: 5
+w2vcopus: ./data/w2vcopus.txt
+w2vmodel: ./data/w2vmodel.bin
+stopwords: ../test6/data/哈工大停用词表.txt
