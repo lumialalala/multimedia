@@ -92,7 +92,6 @@ class Evaluate(object):
         dict_best, thres_best,df_metrics_best,auc_best = self.get_re(self.prefile)
         flag=1
         for i in range(2, 11):
-            print("第i轮实验结果：",i)
             prefile = self.prefile + '_' + str(i)
             dict_params, thres, df_metrics,auc = self.get_re(prefile)
             if dict_params["auc"] > dict_best["auc"]:

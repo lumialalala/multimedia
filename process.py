@@ -26,17 +26,22 @@ f.close()
 f1.close()
 """
 df = pd.read_csv("data/test_set.csv",sep='\001')
+print(df.head(5))
 f1 = open("v2.0/data/test_RCNN.csv", "w")
 f1.write("_id,context,label\n")
 print(df.head(5))
+i=0
 for index,row in df.iterrows():
     _id=row["_id"]
     context = str(row["context"])
     label = row["label"]
-    if label == "rumor":
+    label = label.strip()
+    if label == "__label__rumor":
         sentiment = 0
+        i+=1
     else:
         sentiment = 1
     f1.write(str(_id)+','+context.strip()+','+str(sentiment)+'\n')
 f1.close()
+print(i)
 

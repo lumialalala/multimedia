@@ -51,6 +51,9 @@ def get_re():
     y_true=df["y_true"]
     score=df["score"]
     y_pre=df["y_pre"]
+    for i in y_true:
+        if i==0:
+            print(i)
     y_precopy=np.array(y_pre)
     thres=best_thres(y_true,y_pre,score)
     y_precopy[score<thres]=0

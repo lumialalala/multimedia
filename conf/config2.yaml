@@ -9,7 +9,7 @@ outputfile:
     file_test_replaced: ../v2.0/data/test_replaced.csv
     file_RCNNmodel: ../v2.0/model/RCNNmodel.h5
     file_weight: ../v2.0/model/modelweights
-    prefile: ./v2.0/data/prefile/outputfile.csv
+    prefile: ../v2.0/data/prefile/outputfile.csv
     hisfile: ../v2.0/data/history.pkl
     bestrefile: ../v2.0/data/bestre.pkl
     file_valid_result: ../v2.0/data/valid_outputfile.csv
